@@ -1,0 +1,60 @@
+$white-color: #FFFFFF;
+$orange-color: #DC0000;
+
+body {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #151515;
+    background: #F5F5F5;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    cursor: default;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 150px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: $white-color;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #0D0D0D;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

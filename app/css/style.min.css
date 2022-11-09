@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input, button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #151515;
+  background: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 150px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D0D0D;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.header {
+  background: #FFFFFF;
+  padding: 20px 0;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  width: 130px;
+  height: 28px;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__menu-item {
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+.header__menu-item:hover {
+  color: #F41240;
+}
+.header__img {
+  width: 50px;
+  height: 50px;
+}
+
+.intro {
+  width: 100%;
+  background: url("../img/intro/imtro_bg.jpg") center no-repeat;
+}
+.intro__inner {
+  text-align: center;
+  padding: 160px 0 80px;
+  height: auto;
+}
+.intro__title {
+  width: 1130px;
+  line-height: 1.6;
+  margin-bottom: 150px;
+}
+.intro__connecting {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.intro__connecting span {
+  color: #929292;
+}
+.intro__number {
+  font-size: 33px;
+}

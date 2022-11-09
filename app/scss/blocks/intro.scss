@@ -1,0 +1,26 @@
+.intro {
+    width: 100%;
+    background: url('../img/intro/imtro_bg.jpg') center no-repeat;
+    &__inner {
+        text-align: center;
+        padding: 160px 0 80px;
+        height: auto;
+    };
+    &__title {
+        width: 1130px;
+        line-height: 1.6;
+        margin-bottom: 150px;
+    };
+    &__connecting {
+        color: #FFFFFF;
+        display: flex;
+        justify-content:space-between;
+        span {
+            color: #929292;
+        }
+    };
+    &__number {
+        font-size: 33px;
+        
+    }
+}
