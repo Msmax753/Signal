@@ -1,0 +1,94 @@
+.contacts{
+    padding: 70px 0 100px;
+    background: #151515;
+    &__title {
+        color: #F8F8F8;
+        margin-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__map {
+        width: 40%;
+        iframe {
+            width: 100%;
+        }
+    }
+    &__form {
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        form {
+            width: 100%;
+            &::after {
+                content: '';
+                display: block;
+                border: #2D2D2D 1px solid;
+                width: 100%;
+                margin: 20px 0 70px;
+            }
+            label {
+                font-size: 14px;
+                color: #F8F8F8;
+            }
+            input {
+                font-size: 14px;
+                max-width: 257px;
+                width: 100%;
+                color: #F8F8F8;
+                background-color: #151515;
+                border: none;
+                outline: none;
+                margin-top: 20px;
+               
+            }
+        }
+        button {
+            font-size: 14px;
+            font-weight: 300;
+            color: #F2F2F2;
+            background: #DC0000;
+            border: #DC0000 1px solid;
+            border-radius: 50px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 14px 35px;
+            cursor: pointer;
+            transition: .1s linear;
+            &:hover {
+                color: $orange-color;
+                border: $orange-color 1px solid;
+                background: #151515;
+            }
+        }
+       
+    }
+    &__info {
+        width: 20%;
+        &-item {
+            font-size: 14px;
+            font-weight: 400;
+            color: #F2F2F2;
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-title {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            &-text {
+                font-weight: 300;
+                color: #B9B9B9;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

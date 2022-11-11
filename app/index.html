@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
@@ -15,11 +15,11 @@
 
 <body>
 
-    <header class="header">
+    <header class="header header-fixed">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="assets/img/header/Logo.svg" alt="">
+                    <img src="images/header/Logo.svg" alt="">
                 </div>
                 <div class="header__menu">
                     <h3 class="header__menu-item">О нас</h3>
@@ -29,7 +29,7 @@
                     <h3 class="header__menu-item">Контакты</h3>
                 </div>
                 <div class="header__img">
-                    <img src="assets/img/header/R.svg" alt="">
+                    <a href="#"><img src="images/header/R.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -42,13 +42,17 @@
                     <h1>Агентство Signal — услуги по креативному и техническому обеспечению мероприятий</h1>
                 </div>
                 <div class="intro__connecting">
-                    <div class="intro__number"><span>+7(925)</span> 077-41-57</div>
+                    <div class="intro__number">
+                        <a href="#"><span>+7(925)</span> 077-41-57</a>
+                    </div>
                     <div class="intro__img">
-                        <img src="assets/img/intro/V.svg" alt="">
+                        <img src="images/intro/V.svg" alt="">
                     </div>
                     <div class="intro__email">
-
-                        <div class="email__text">info@signal-tv.com</div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="email__text">
+                            <a href="#">info@signal-tv.com</a> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,50 +61,66 @@
 
     <section class="videos">
         <div class="videos__inner">
-            <div class="videos__title">
+            <div class="videos__header">
                 <h2>Ролики</h2>
             </div>
             <div class="videos__content">
-                <div class="videos__item">
-                    <div class="videos__img"></div>
-                    <div class="videos__title">
-                        <div class="videos__text">BMX</div>
-
-                        <div class="videos__logo"></div>
+                <div class="videos__content-item">
+                    <div class="videos__content-img">
+                        <img src="images/videos/img-1.jpg" alt="">
+                        <img class="play" src="images/videos/Play.svg" alt="">
+                    </div>
+                    <div class="videos__content-title">
+                        <div class="videos__content-text">BMX <img src="images/videos/Arow-left.svg" alt=""> </div>
+                        <div class="videos__content-logo">
+                            <a href="#"><img src="images/header/R.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="videos__item">
-                    <div class="videos__img"></div>
-                    <div class="videos__title">
-                        <div class="videos__text">Архитектура</div>
-
-                        <div class="videos__logo"></div>
+                <div class="videos__content-item">
+                    <div class="videos__content-img">
+                        <img src="images/videos/img-2.jpg" alt="">
+                        <img class="play" src="images/videos/Play.svg" alt="">
+                    </div>
+                    <div class="videos__content-title">
+                        <div class="videos__content-text">Архитектура <img src="images/videos/Arow-left.svg" alt=""> </div>
+                        <div class="videos__content-logo">
+                            <a href="#"><img src="images/header/R.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="videos__item">
-                    <div class="videos__img"></div>
-                    <div class="videos__title">
-                        <div class="videos__text">Графика</div>
-
-                        <div class="videos__logo"></div>
+                <div class="videos__content-item">
+                    <div class="videos__content-img">
+                        <img src="images/videos/img-3.jpg" alt="">
+                    </div>
+                    <div class="videos__content-title">
+                        <div class="videos__content-text">Графика <img src="images/videos/Arow-left.svg" alt=""> </div>
+                        <div class="videos__content-logo">
+                            <a href="#"><img src="images/header/R.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="videos__item">
-                    <div class="videos__img"></div>
-                    <div class="videos__title">
-                        <div class="videos__text">Moscow Night Sport</div>
-
-                        <div class="videos__logo"></div>
+                <div class="videos__content-item">
+                    <div class="videos__content-img">
+                        <img src="images/videos/img-4.jpg" alt="">
+                    </div>
+                    <div class="videos__content-title">
+                        <div class="videos__content-text">Moscow Night Sport <img src="images/videos/Arow-left.svg" alt="next"> </div>
+                        <div class="videos__content-logo">
+                            <a href="#"><img src="images/header/R.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="lines"></div>
+        <div class="lines">
+            <img src="images/videos/Signal-line.svg" alt="Signal">
+        </div>
     </section>
 
     <section class="services">
@@ -110,23 +130,27 @@
             </div>
             <div class="services__content">
                 <div class="services__column">
-                    <div class="columns__item">
-                        <div class="columns__title">
+                    <div class="services__column-item">
+                        <div class="services__column-title">
                             <h4>Трансляции спортивных мероприятий</h4>
                         </div>
-                        <div class="columns__img"></div>
-                        <div class="columns__text">
+                        <div class="services__column-img">
+                            <img src="images/services/img-1.jpg" alt="">
+                        </div>
+                        <div class="services__column-text">
                             <p>Организация и проведение съёмок и трансляций спортивных мероприятий в любой точке России. Опыт команды позволяет делать качественные съемки в самых разных условиях. В том числе подводная съемка и аэросъемка. Компетенции команды позволяют находить неординарные технические решения для выполнения задач заказчика.</p>
                         </div>
-                        <div class="columns__subtitle">Создаем полный эффект присутствия!</div>
+                        <div class="services__column-subtitle">Создаем полный эффект присутствия!</div>
                     </div>
 
-                    <div class="columns__item">
-                        <div class="columns__title">
+                    <div class="services__column-item">
+                        <div class="services__column-title">
                             <h4>Онлайн мероприятия</h4>
                         </div>
-                        <div class="columns__img"></div>
-                        <div class="columns__text">
+                        <div class="services__column-img">
+                            <img src="images/services/img-2.jpg" alt="">
+                        </div>
+                        <div class="services__column-text">
                             <ul>
                                 <li>Предоставление бизнес аккаунта</li>
                                 <li>Трансляция на сайт заказчика или любую платформу</li>
@@ -135,17 +159,19 @@
                                 <li>Отслеживание работы в прямом эфире</li>
                             </ul>
                         </div>
-                        <div class="columns__subtitle">Мы организуем конференцию, чтобы вас услышали!</div>
+                        <div class="services__column-subtitle">Мы организуем конференцию, чтобы вас услышали!</div>
                     </div>
                 </div>
 
                 <div class="services__column">
-                    <div class="columns__item">
-                        <div class="columns__title">
+                    <div class="services__column-item">
+                        <div class="services__column-title">
                             <h4>Создание графики</h4>
                         </div>
-                        <div class="columns__img"></div>
-                        <div class="columns__text">
+                        <div class="services__column-img">
+                            <img src="images/services/img-3.jpg" alt="">
+                        </div>
+                        <div class="services__column-text">
                             <ul>
                                 <li>Для трансляций</li>
                                 <li>Для телевизионной и онлайн-рекламы</li>
@@ -154,18 +180,20 @@
                                 <li>Для инсталляций и мероприятий</li>
                             </ul>
                         </div>
-                        <div class="columns__subtitle">Визуализируем любые идеи!</div>
+                        <div class="services__column-subtitle">Визуализируем любые идеи!</div>
                     </div>
 
-                    <div class="columns__item">
-                        <div class="columns__title">
+                    <div class="services__column-item">
+                        <div class="services__column-title">
                             <h4>Съемка клипов</h4>
                         </div>
-                        <div class="columns__img"></div>
-                        <div class="columns__text">
+                        <div class="services__column-img">
+                            <img src="images/services/img-4.jpg" alt="">
+                        </div>
+                        <div class="services__column-text">
                             <p>Организация и проведение съёмок музыкальных клипов и мероприятий для музыкантов. Опыт команды позволяет делать качественные съемки в самых разных условиях. В том числе съемка ка концертах исполнителей. Компетенции команды позволяют находить неординарные технические решения для выполнения задач заказчика.</p>
                         </div>
-                        <div class="columns__subtitle">Создаем трендовые музыкальные ролики!</div>
+                        <div class="services__column-subtitle">Создаем трендовые музыкальные ролики!</div>
                     </div>
                 </div>
 
@@ -214,7 +242,10 @@
                 <h2>Партнеры</h2>
             </div>
             <div class="partners__content">
-                <img src="" alt="">
+                <img src="images/partners/logo-1.svg" alt="">
+                <img src="images/partners/logo-2.svg" alt="">
+                <img src="images/partners/logo-3.svg" alt="">
+                <img src="images/partners/logo-4.svg" alt="">
             </div>
         </div>
     </section>
@@ -226,7 +257,9 @@
             </div>
             <div class="contacts__inner">
 
-                <div class="contacts__map"></div>
+                <div class="contacts__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11320.766886260664!2d37.585352878240904!3d55.735488119280504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1668196680010!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
                 <div class="contacts__form">
 
@@ -245,22 +278,23 @@
                         <input class="email__input" type="text" id="text" placeholder="Введите текст сообщения">
                     </form>
 
-                    <button class="form__btn">Отправить</button>
+                    <button class="form__btn">Отправить <i class="fa-solid fa-arrow-right"></i></button>
+                    
 
                 </div>
 
                 <div class="contacts__info">
                     <div class="contacts__info-item">
-                        <div class="item__title">Адрес</div>
-                        <a href="#" class="item__text">г. Москва, Большой Саввинский переулок, 9с2</a>
+                        <div class="contacts__info-item-title">Адрес</div>
+                        <a href="#" class="contacts__info-item-text">г. Москва, Большой Саввинский переулок, 9с2</a>
                     </div>
                     <div class="contacts__info-item">
-                        <div class="item__title">Почта</div>
-                        <a href="#" class="item__text">info@signal-tv.com</a>
+                        <div class="contacts__info-item-title">Почта</div>
+                        <a href="#" class="contacts__info-item-text">info@signal-tv.com</a>
                     </div>
                     <div class="contacts__info-item">
-                        <div class="item__title">Телефон</div>
-                        <a href="#" class="item__text">+7(925) 077-41-57</a>
+                        <div class="contacts__info-item-title">Телефон</div>
+                        <a href="#" class="contacts__info-item-text">+7(925) 077-41-57</a>
                     </div>
                 </div>
 
@@ -271,15 +305,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__logo"></div>
-                <div class="footer__menu">
-                    <h3 class="footer__menu-item">О нас</h3>
-                    <h3 class="footer__menu-item">Ролики</h3>
-                    <h3 class="footer__menu-item">Услуги</h3>
-                    <h3 class="footer__menu-item">Партнеры</h3>
-                    <h3 class="footer__menu-item">Контакты</h3>
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <img src="images/footer/logo.svg" alt="">
+                    </div>
+                    <div class="footer__menu">
+                        <h3 class="footer__menu-item">О нас</h3>
+                        <h3 class="footer__menu-item">Ролики</h3>
+                        <h3 class="footer__menu-item">Услуги</h3>
+                        <h3 class="footer__menu-item">Партнеры</h3>
+                        <h3 class="footer__menu-item">Контакты</h3>
+                    </div>
+                    <div class="footer__img">
+                        <img src="images/footer/rutube.svg" alt="">
+                    </div>
                 </div>
-                <div class="header__img"></div>
             </div>
         </div>
     </footer>
@@ -287,7 +327,7 @@
 
 
 
-<script src="assets/js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

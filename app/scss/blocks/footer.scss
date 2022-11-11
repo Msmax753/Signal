@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    background: #151515;
+    &__inner {
+        padding-bottom: 70px;
+        &::before {
+            content: '';
+            display: block;
+            border: #2D2D2D 1px solid;
+            width: 100%;
+            margin-bottom: 70px;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #F8F8F8;
+            margin-right: 70px;
+            transition: color 0.1s linear;
+            cursor: pointer;
+            &:hover {
+                color: $orange-color;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
+}

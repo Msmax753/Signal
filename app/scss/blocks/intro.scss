@@ -1,13 +1,14 @@
 .intro {
     width: 100%;
-    background: url('../img/intro/imtro_bg.jpg') center no-repeat;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), url('../images/intro/bg.jpg') center no-repeat; background-size: cover;
     &__inner {
         text-align: center;
         padding: 160px 0 80px;
         height: auto;
     };
     &__title {
-        width: 1130px;
         line-height: 1.6;
         margin-bottom: 150px;
     };
@@ -15,12 +16,32 @@
         color: #FFFFFF;
         display: flex;
         justify-content:space-between;
+        align-items: center;
         span {
             color: #929292;
         }
     };
     &__number {
         font-size: 33px;
-        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    &__img {
+        cursor: pointer;
+    }
+    &__email{
+        font-size: 18px;
+        display: flex;
+        i {
+            font-size: 21px;
+            color: $orange-color;
+            margin-right: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     }
 }
