@@ -14,11 +14,13 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
     }
     &__menu {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         &-item {
             font-size: 14px;
             font-weight: 300;
