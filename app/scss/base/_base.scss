@@ -12,7 +12,11 @@ body {
 
     overflow-x: hidden;
     cursor: default;
+    &-hidden {
+        overflow: hidden;
+    }
 }
+
 
 
 .container {
@@ -31,6 +35,7 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.5em;
+    line-height: 1.5;
     text-transform: uppercase;
 
     text-align: center;

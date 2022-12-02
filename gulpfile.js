@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const revDel = require('rev-del');
 const arrBlocksNames = ['sass.common.blocks'];
+const ghPages = require('gulp-gh-pages');
 
 
 function styles() {
@@ -32,7 +33,7 @@ function scripts() {
 }
 
 function img() {
-    return src('app/images/*')
+    return src('app/images/*/*')
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -49,9 +50,11 @@ function img() {
 
 function build() {
     return src([
+        'app/animate.css/*',
         'app/css/style.min.css',
         'app/fonts/**/*',
-        'app/js/main.min.js',
+        'app/js/*',
+        'app/slick/**',
         'app/*.html'
     ], {base: 'app'})
     .pipe(dest('dist'))
@@ -79,6 +82,8 @@ function cleanDist(f) { f();
         return revDel('dist');
     })
 }
+
+
 
 
 exports.styles = styles;

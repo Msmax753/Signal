@@ -27,6 +27,9 @@ body {
   overflow-x: hidden;
   cursor: default;
 }
+body-hidden {
+  overflow: hidden;
+}
 
 .container {
   width: 100%;
@@ -45,6 +48,7 @@ h2 {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5em;
+  line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
 }
@@ -75,6 +79,7 @@ h3 {
 .header__logo {
   width: 130px;
   height: 28px;
+  cursor: pointer;
 }
 .header__menu {
   display: -webkit-box;
@@ -100,6 +105,7 @@ h3 {
 .header__img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 .header-fixed {
   width: 100%;
@@ -135,12 +141,25 @@ h3 {
   width: 40px;
   top: calc(50% + 10px);
 }
+.header .transform span:nth-of-type(1) {
+  -webkit-transform: translate(-200px);
+      -ms-transform: translate(-200px);
+          transform: translate(-200px);
+}
+.header .transform span:nth-of-type(2) {
+  width: 40px;
+  -webkit-transform: translate(0, 10px) rotate(-45deg);
+      -ms-transform: translate(0, 10px) rotate(-45deg);
+          transform: translate(0, 10px) rotate(-45deg);
+}
+.header .transform span:nth-of-type(3) {
+  -webkit-transform: translate(0, -10px) rotate(45deg);
+      -ms-transform: translate(0, -10px) rotate(45deg);
+          transform: translate(0, -10px) rotate(45deg);
+}
 .header__modal {
   display: none;
   text-align: center;
-}
-.header__menu-item {
-  margin: 40px 0;
 }
 .header .active {
   display: block;
@@ -252,6 +271,8 @@ h3 {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .videos__content-img {
   position: relative;
@@ -309,6 +330,7 @@ h3 {
 .services {
   width: 100%;
   margin: 100px 0;
+  overflow-x: hidden;
 }
 .services__title {
   margin-bottom: 70px;
@@ -631,6 +653,11 @@ h3 {
   margin-right: 0;
 }
 
+.modal {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .modal__wrapper {
   width: 100%;
   height: 100%;
@@ -726,6 +753,39 @@ h3 {
 .modal-hidden {
   opacity: 0;
   visibility: hidden;
+  -webkit-animation: modal;
+          animation: modal;
+}
+.modal__close {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  z-index: 16;
+  cursor: pointer;
+}
+.modal__close span {
+  border-radius: 2px;
+  width: 35px;
+  height: 3px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #F2F2F2;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  position: absolute;
+}
+.modal__close span:nth-of-type(2) {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 @media (max-width: 1200px) {
@@ -737,6 +797,9 @@ h3 {
   }
   .header__btn {
     display: block;
+  }
+  .header__menu-item {
+    margin: 40px 0;
   }
   .videos .lines img {
     margin-top: 80px;
@@ -961,5 +1024,21 @@ h3 {
   }
   .modal__content-text {
     margin-bottom: 40px;
+  }
+  .contacts__info {
+    margin: 0 0 80px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contacts__form {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .contacts__map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }

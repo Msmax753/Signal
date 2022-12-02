@@ -32,6 +32,7 @@
                 width: 20px;
                 margin-left: 10px;
                 transform: rotate(135deg);
+                object-fit: contain;
             }
         }
         &-img {
@@ -48,18 +49,19 @@
             cursor: pointer;
         }
         .slick-prev {
+            
             left: 40%;
             top: 106%;
             background: url('../../images/videos/Arow-left.svg') center no-repeat;
             &::before{
-                content: '';
+                content: '' ;
             }
             &:hover {
                 background: url('../../images/videos/Arow-left.svg') center no-repeat;
             }
             &:focus {
                 background: url('../../images/videos/Arow-left.svg') center no-repeat;
-            }
+            } 
         }
 
             .slick-next {

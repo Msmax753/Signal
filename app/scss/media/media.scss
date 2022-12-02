@@ -9,6 +9,9 @@
         &__btn {
             display: block;
         }
+        &__menu-item {
+            margin: 40px 0;
+        }
     }
     .videos .lines img {
         margin-top: 80px;
@@ -256,5 +259,17 @@
             }
         }
 
+    }
+    .contacts {
+        &__info {
+            margin: 0 0 80px;
+            order: 1;
+        }
+        &__form {
+            order: 3;
+        }
+        &__map {
+            order: 2;
+        }
     }
 }
